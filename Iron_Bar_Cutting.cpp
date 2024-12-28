@@ -11,7 +11,7 @@ signed main()
     // cin>>_t;
     while(_t--) 
     {
-        int n,min1=100;
+        int n,min1=2020202020;
         cin>>n;
         int arr[n],sum[n]={0},diff1[n]={0ll},diff2[n]={0ll};
         for(int i=0;i<n;i++)
