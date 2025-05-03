@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Node{
+
+    public:
+
+    int data;
+    Node * next;
+
+    Node(int value) {
+        data = value;
+        next =NULL;
+    }
+
+};
+int main()
+ {
+    Node* a = new Node(1);
+    Node* b = new Node(2);
+    Node* c = new Node(3);
+    Node* head;
+    a->next = b;
+    b->next = c;
+    head = a;
+    while (head != nullptr) {
+        cout << head->data << " -> ";
+        head = head->next;
+    }
+  return 0;
+ }
